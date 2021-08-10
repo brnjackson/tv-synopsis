@@ -1,5 +1,29 @@
 body {
-    background-color: bisque;
+    background-color: rgba(194, 187, 187, 0.986);
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    margin: 0 auto;
+    border-collapse: separate;
+}
+
+.no {
+    width: 5%;
+}
+
+.title {
+    width: 40%;
+}
+.director {
+    width: 20%;
+}
+
+
+th {
+    background-color: lightskyblue;
+    border: 1px solid black;
+}
+td {
+    background-color: white;
 }

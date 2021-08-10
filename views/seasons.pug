@@ -1,0 +1,16 @@
+html
+    head
+        link(rel="stylesheet" href="/css/styles.css")
+    body
+      h1= 'Season ' + selectedSeason[0].number
+        table
+          th No.
+          th Title
+          th Director
+            for episode in selectedSeason[0].episodes
+              tr
+                td= episode.number
+                td= episode.title
+                td= episode.director
+              tr
+                td(colspan=3)= episode.synopsis
