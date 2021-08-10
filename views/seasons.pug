@@ -2,15 +2,18 @@ html
     head
         link(rel="stylesheet" href="/css/styles.css")
     body
-      h1= 'Season ' + selectedSeason[0].number
+    center
+        h1= 'Season ' + selectedSeason[0].number
+    center
+      a(class="homepage" href="/") back to main page
         table
           th No.
           th Title
           th Director
             for episode in selectedSeason[0].episodes
               tr
-                td= episode.number
-                td= episode.title
-                td= episode.director
+                td(class="number")= episode.number
+                td(class="title")= episode.title
+                td(class="director")= episode.director
               tr
-                td(colspan=3)= episode.synopsis
+                td(class="synopsis" colspan=3)= episode.synopsis

@@ -1,29 +1,47 @@
 body {
     background-color: rgba(194, 187, 187, 0.986);
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 table {
     margin: 0 auto;
-    border-collapse: separate;
+    border-collapse: collapse;
+    width: 60%;
 }
-
-.no {
-    width: 5%;
-}
-
-.title {
-    width: 40%;
-}
-.director {
-    width: 20%;
-}
-
 
 th {
     background-color: lightskyblue;
     border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 td {
     background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    
+}
+.number {
+    font-weight: bold;
+}
+.synopsis {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.title {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: red;
+}
+h1 {
+    padding: 0px 0px 0px 0px;
 }
