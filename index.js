@@ -4,6 +4,8 @@ const showdata = require('./showdata')
 
 const app = express()
 
+const port = process.env.PORT || 1337
+
 app.set('view engine', 'pug')
 app.use(express.static('public'))
 
@@ -22,6 +24,6 @@ app.all('*', (request, response) => {
   return response.status(404).send('Try again :(')
 })
 
-app.listen(1337, () => {
+app.listen(port, () => {
   console.log('Yes this is actually working :O') // eslint-disable-line no-console
 })
